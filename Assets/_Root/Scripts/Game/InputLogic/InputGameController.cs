@@ -6,10 +6,10 @@ namespace Game.InputLogic
 {
     internal class InputGameController : BaseController
     {
-        private readonly ResourcePath _resourcePath = new("Prefabs/EndlessMove");
+        private readonly ResourcePath _resourcePath = new("Prefabs/InputButton");
         private readonly BaseInputView _view;
 
-
+        
         public InputGameController(
             SubscriptionProperty<float> leftMove,
             SubscriptionProperty<float> rightMove,
