@@ -8,11 +8,14 @@ namespace Ui
     {
         [SerializeField] private Button _buttonStart;
         [SerializeField] private Button _buttonSettings;
-
-        public void Init(UnityAction startGame, UnityAction openSettings)
+        [SerializeField] private Button _buttonPlayRewarded;
+        [SerializeField] private Button _buttonPurchase;
+        public void Init(UnityAction startGame, UnityAction openSettings, UnityAction playRewarded, UnityAction buyGoldToken)
         {
             _buttonStart.onClick.AddListener(startGame);
             _buttonSettings.onClick.AddListener(openSettings);
+            _buttonPlayRewarded.onClick.AddListener(playRewarded);
+            _buttonPurchase.onClick.AddListener(buyGoldToken);
         }
 
         public void OnDestroy()
